@@ -1,0 +1,251 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum UserRole {
+  COUPLE
+  FAMILY
+  ORGANIZER
+  VENDOR
+  ADMIN
+}
+
+enum BookingStatus {
+  PENDING
+  CONFIRMED
+  CANCELLED
+  COMPLETED
+}
+
+model User {
+  id            String    @id @default(cuid())
+  email         String?   @unique
+  phone         String?   @unique
+  name          String?
+  image         String?
+  role          UserRole  @default(COUPLE)
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  coupleProfile    CoupleProfile?
+  organizerProfile OrganizerProfile?
+  vendorProfile    VendorProfile?
+  reviews          Review[]
+}
+
+model CoupleProfile {
+  id            String   @id @default(cuid())
+  userId        String   @unique
+  partnerName   String?
+  weddingDate   DateTime?
+  city          String   @default("Tashkent")
+  guestCount    Int?
+  totalBudget   Decimal? @db.Decimal(15, 2)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  user          User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  budgetPlan    BudgetPlan?
+  bookings      Booking[]
+  organizerLinks OrganizerClient[]
+}
+
+model BudgetPlan {
+  id              String   @id @default(cuid())
+  coupleId        String   @unique
+  totalBudget     Decimal  @db.Decimal(15, 2)
+  guestCount      Int
+  city            String
+  priorities      Json
+  breakdown       Json
+  scenarios       Json
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  couple          CoupleProfile @relation(fields: [coupleId], references: [id], onDelete: Cascade)
+}
+
+model VendorProfile {
+  id            String   @id @default(cuid())
+  userId        String   @unique
+  businessName  String
+  slug          String   @unique
+  description   String?
+  city          String
+  address       String?
+  phone         String?
+  whatsapp      String?
+  instagram     String?
+  website       String?
+  logo          String?
+  coverImage    String?
+  verified      Boolean  @default(false)
+  featured      Boolean  @default(false)
+  rating        Decimal? @default(0) @db.Decimal(3, 2)
+  reviewCount   Int      @default(0)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  user          User             @relation(fields: [userId], references: [id], onDelete: Cascade)
+  categories    VendorCategory[]
+  tiers         VendorTier[]
+  bookings      Booking[]
+  reviews       Review[]
+
+  @@index([city])
+  @@index([verified, featured])
+}
+
+model VendorCategory {
+  id          String   @id @default(cuid())
+  vendorId    String
+  name        String
+  slug        String
+  description String?
+  icon        String?
+  sortOrder   Int      @default(0)
+  active      Boolean  @default(true)
+  createdAt   DateTime @default(now())
+
+  vendor      VendorProfile @relation(fields: [vendorId], references: [id], onDelete: Cascade)
+  tiers       VendorTier[]
+
+  @@unique([vendorId, slug])
+}
+
+model VendorTier {
+  id            String   @id @default(cuid())
+  categoryId    String
+  vendorId      String
+  name          String
+  slug          String
+  description   String?
+  price         Decimal  @db.Decimal(15, 2)
+  priceUnit     String   @default("fixed")
+  capacity      Int?
+  minGuests     Int?
+  maxGuests     Int?
+  features      Json
+  images        Json
+  active        Boolean  @default(true)
+  popular       Boolean  @default(false)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  category      VendorCategory @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+  vendor        VendorProfile  @relation(fields: [vendorId], references: [id], onDelete: Cascade)
+  bookings      Booking[]
+
+  @@unique([categoryId, vendorId, slug])
+  @@index([price])
+}
+
+model Booking {
+  id            String        @id @default(cuid())
+  coupleId      String
+  vendorId      String
+  tierId        String
+  eventDate     DateTime
+  status        BookingStatus @default(PENDING)
+  totalPrice    Decimal       @db.Decimal(15, 2)
+  notes         String?
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
+
+  couple        CoupleProfile @relation(fields: [coupleId], references: [id])
+  vendor        VendorProfile @relation(fields: [vendorId], references: [id])
+  tier          VendorTier    @relation(fields: [tierId], references: [id])
+
+  @@index([coupleId])
+  @@index([vendorId])
+}
+
+model Review {
+  id            String   @id @default(cuid())
+  vendorId      String
+  userId        String
+  rating        Int
+  comment       String?
+  helpful       Int      @default(0)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  vendor        VendorProfile @relation(fields: [vendorId], references: [id])
+  user          User          @relation(fields: [userId], references: [id])
+
+  @@unique([vendorId, userId])
+}
+
+model OrganizerProfile {
+  id            String   @id @default(cuid())
+  userId        String   @unique
+  businessName  String
+  slug          String   @unique
+  description   String?
+  phone         String?
+  logo          String?
+  rating        Decimal? @default(0) @db.Decimal(3, 2)
+  clientCount   Int      @default(0)
+  tier          String   @default("free")
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  user          User               @relation(fields: [userId], references: [id], onDelete: Cascade)
+  clients       OrganizerClient[]
+}
+
+model OrganizerClient {
+  id              String   @id @default(cuid())
+  organizerId     String
+  coupleId        String
+  status          String   @default("active")
+  notes           String?
+  commission      Decimal? @db.Decimal(5, 2)
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  organizer       OrganizerProfile @relation(fields: [organizerId], references: [id])
+  couple          CoupleProfile    @relation(fields: [coupleId], references: [id])
+
+  @@unique([organizerId, coupleId])
+}
+
+model Category {
+  id          String   @id @default(cuid())
+  name        String
+  nameUz      String?
+  slug        String   @unique
+  description String?
+  icon        String?
+  image       String?
+  sortOrder   Int      @default(0)
+  active      Boolean  @default(true)
+  createdAt   DateTime @default(now())
+}
+
+model City {
+  id          String   @id @default(cuid())
+  name        String   @unique
+  nameUz      String?
+  region      String?
+  active      Boolean  @default(true)
+}
+
+model SavedBudget {
+  id            String   @id @default(cuid())
+  userId        String
+  title         String
+  data          Json
+  shared        Boolean  @default(false)
+  shareToken    String?  @unique
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  @@index([userId])
+  @@index([shareToken])
+}
