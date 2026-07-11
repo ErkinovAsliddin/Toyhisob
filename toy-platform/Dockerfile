@@ -10,9 +10,7 @@ WORKDIR /app
 # Install Prisma dependencies
 COPY package.json package-lock.json* ./
 COPY prisma ./prisma/
-RUN npm ci --only=production && \
-    cp -R node_modules /tmp/prod_modules && \
-    npm ci
+RUN npm ci
 
 # --- Stage 2: Build the application ---
 FROM node:20-alpine AS builder
