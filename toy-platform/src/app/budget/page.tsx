@@ -30,6 +30,7 @@ import {
   Car,
   Mail,
   Gift,
+  type LucideIcon,
 } from "lucide-react";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
@@ -46,7 +47,7 @@ import {
 import { formatPrice, formatPriceCompact, cn } from "@/lib/utils";
 import { UZBEKISTAN_CITIES, WEDDING_CATEGORIES, type WeddingCategory } from "@/types";
 
-const ICON_MAP: Record<string, React.ComponentType<{ className?: string }>> = {
+const ICON_MAP: Record<string, LucideIcon> = {
   UtensilsCrossed, Building2, Camera, Music, Flower2, Shirt, Car, Mail, Gift,
 };
 
