@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { I18nProvider } from "@/i18n/context";
 
 export const metadata: Metadata = {
   title: "To'y Platform — Plan Your Wedding, Not Your Debt",
@@ -11,6 +12,8 @@ export const metadata: Metadata = {
     "to'y rejalashtirish",
     "wedding budget",
     "wedding vendors tashkent",
+    "свадьба узбекистан",
+    "планировщик свадьбы",
   ],
 };
 
@@ -20,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
@@ -30,7 +33,7 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-screen bg-slate-50 antialiased">
-        {children}
+        <I18nProvider>{children}</I18nProvider>
       </body>
     </html>
   );

@@ -1,0 +1,343 @@
+{
+  "common": {
+    "appName": "To'y Platform",
+    "tagline": "Plan the wedding you want, not the one you're pressured into",
+    "loading": "Loading...",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "back": "Back",
+    "next": "Next",
+    "continue": "Continue",
+    "finish": "Finish",
+    "search": "Search",
+    "filter": "Filter",
+    "all": "All",
+    "none": "None",
+    "yes": "Yes",
+    "no": "No",
+    "or": "or",
+    "and": "and",
+    "close": "Close",
+    "share": "Share",
+    "export": "Export",
+    "import": "Import",
+    "download": "Download",
+    "upload": "Upload",
+    "viewAll": "View All",
+    "viewMore": "View More",
+    "learnMore": "Learn More",
+    "getStarted": "Get Started",
+    "signIn": "Sign In",
+    "signUp": "Sign Up",
+    "signOut": "Sign Out",
+    "email": "Email",
+    "password": "Password",
+    "phone": "Phone",
+    "name": "Name",
+    "guests": "guests",
+    "perGuest": "per guest",
+    "fixed": "fixed price",
+    "verified": "Verified",
+    "featured": "Featured",
+    "reviews": "reviews",
+    "rating": "Rating",
+    "popular": "Popular",
+    "budget": "Budget",
+    "standard": "Standard",
+    "premium": "Premium",
+    "saveAmount": "Save {amount}",
+    "vsStandard": "vs Standard",
+    "startOver": "Start Over",
+    "noResults": "No results found",
+    "clearFilters": "Clear Filters"
+  },
+  "nav": {
+    "budgetPlanner": "Budget Planner",
+    "marketplace": "Marketplace",
+    "dashboard": "Dashboard",
+    "planWedding": "Plan Your Wedding",
+    "browseVendors": "Browse Vendors",
+    "notifications": "Notifications"
+  },
+  "hero": {
+    "badge": "Uzbekistan's First Smart Wedding Planner",
+    "title1": "Plan the wedding",
+    "titleHighlight": "you want",
+    "title2": "not the one you're",
+    "titleStrikethrough": "pressured into",
+    "subtitle": "See real costs, compare vendors at every price tier, and get a budget your whole family can agree on — backed by real data from Tashkent's wedding market.",
+    "cta": "Start Planning — Free",
+    "socialProof": "2,400+ couples",
+    "ratingText": "4.9/5"
+  },
+  "problems": {
+    "title": "The real problem with weddings in Uzbekistan",
+    "subtitle": "It's not about finding vendors. It's about the financial and social pressure that makes weddings cost more than a year's income.",
+    "stat1Number": "65%",
+    "stat1Label": "of weddings cost more than a year's income",
+    "stat2Number": "44%",
+    "stat2Label": "of couples regret how much they spent",
+    "stat3Number": "0",
+    "stat3Label": "platforms for real cost comparison in Uzbekistan"
+  },
+  "features": {
+    "title": "Everything you need to plan smart",
+    "badge": "How it works",
+    "budgetPlanner": {
+      "title": "AI Budget Planner",
+      "description": "Enter your budget, guest count, and priorities. Get a realistic breakdown with real local prices — not generic advice."
+    },
+    "comparison": {
+      "title": "Multi-Tier Comparison",
+      "description": "Compare catering, venues, and services at budget/standard/premium tiers side by side. See exactly what your money buys."
+    },
+    "pressureProof": {
+      "title": "Pressure-Proof Data",
+      "description": "Share a professional cost breakdown with family. Reframe 'we're cutting costs' as 'we did the math.' Numbers speak louder."
+    },
+    "forEveryone": {
+      "title": "For Everyone Involved",
+      "description": "Built for couples, families paying, wedding organizers, and vendors. Everyone sees what they need in one place."
+    }
+  },
+  "categories": {
+    "title": "Compare vendors at every price tier",
+    "badge": "Marketplace",
+    "subtitle": "Every category has budget, standard, and premium options. Find the perfect match for your wedding.",
+    "catering": "Catering & Osh",
+    "venue": "Venues & Halls",
+    "photography": "Photo & Video",
+    "music": "Music & DJ",
+    "decoration": "Decoration & Florals",
+    "clothing": "Clothing & Accessories",
+    "transport": "Transport & Cars",
+    "invitations": "Invitations & Cards",
+    "gifts": "Gifts & Sarpo"
+  },
+  "steps": {
+    "badge": "3 Simple Steps",
+    "title": "From 'I don't know where to start' to 'I've got this'",
+    "step1": {
+      "number": "01",
+      "title": "Tell us your budget",
+      "description": "Enter your total budget, guest count, and city. Or say 'I don't know' and let us help figure it out."
+    },
+    "step2": {
+      "number": "02",
+      "title": "See your breakdown",
+      "description": "Get a realistic cost allocation across all wedding categories based on real Tashkent market data."
+    },
+    "step3": {
+      "number": "03",
+      "title": "Compare & decide",
+      "description": "Compare vendors at different price tiers. Ask our AI 'what's the best catering under 5M for 100 guests?'"
+    }
+  },
+  "testimonials": {
+    "badge": "Real Stories",
+    "title": "Couples who planned smarter",
+    "items": [
+      {
+        "name": "Dilnoza & Sardor",
+        "text": "We saved 12M UZS by switching from a 200-person to 80-person wedding. The budget planner showed us exactly where the money was going."
+      },
+      {
+        "name": "Farida & Ozodbek",
+        "text": "Showing our families the cost comparison ended the 'you must invite everyone' conversation. Numbers are harder to argue with."
+      },
+      {
+        "name": "Malika, Wedding Organizer",
+        "text": "As a wedding organizer, managing 5 clients' budgets in one dashboard saves me hours every week. Game changer."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to plan smarter?",
+    "subtitle": "Join thousands of couples who chose information over pressure. Your perfect wedding starts with a realistic budget.",
+    "button": "Start Your Free Budget Plan"
+  },
+  "footer": {
+    "description": "Plan the wedding you want, not the one you're pressured into. See real costs, real comparisons, and control the number.",
+    "plan": "Plan",
+    "vendors": "Vendors",
+    "connect": "Connect",
+    "budgetPlanner": "Budget Planner",
+    "costComparison": "Cost Comparison",
+    "weddingChecklist": "Wedding Checklist",
+    "madeWith": "Built for couples who want",
+    "notDebt": "not debt",
+    "copyright": "2026 To'y Platform. Made with love for Uzbekistan."
+  },
+  "budget": {
+    "badge": "AI-Powered Budget Planner",
+    "title": "Build your wedding budget",
+    "subtitle": "A few inputs, and we'll show you exactly where your money should go — based on real Tashkent market data.",
+    "steps": {
+      "location": "Location & Date",
+      "guests": "Guest Count",
+      "budget": "Your Budget",
+      "priorities": "Priorities",
+      "plan": "Your Plan"
+    },
+    "location": {
+      "title": "Where and when?",
+      "city": "City",
+      "date": "Wedding Date",
+      "yourName": "Your Name"
+    },
+    "guests": {
+      "title": "How many guests?",
+      "intimate": "intimate",
+      "standard": "standard",
+      "grand": "grand",
+      "info": "According to survey data, 65% of Uzbek weddings have 100-200 guests. Smaller weddings save an average of 40-60% on catering alone."
+    },
+    "budget": {
+      "title": "What's your total budget?",
+      "budgetRange": "budget",
+      "midRange": "mid",
+      "premiumRange": "premium",
+      "perGuestEstimate": "Per-guest cost estimate",
+      "greatBudget": "Great budget discipline!",
+      "moderateRange": "Moderate range — room to optimize",
+      "premiumRangeText": "Premium range — consider if this aligns with your priorities"
+    },
+    "priorities": {
+      "title": "What matters most to you?",
+      "description": "Drag the sliders to allocate your budget across categories. The percentages should add up to 100%.",
+      "totalAllocated": "Total allocated"
+    },
+    "plan": {
+      "title": "Your Wedding Budget Plan",
+      "costBreakdown": "Cost Breakdown by Category",
+      "scenarioComparison": "Scenario Comparison",
+      "yourPlan": "Your Plan",
+      "showScenarios": "Show Scenarios",
+      "hideScenarios": "Hide Scenarios",
+      "moneySavingTips": "Money-Saving Tips",
+      "browseVendors": "Browse Vendors",
+      "tips": [
+        "Book venues in off-season (Nov-Feb) for 20-30% savings",
+        "Consider osh/plov instead of a full multi-course menu",
+        "Use seasonal flowers — they're 50% cheaper and fresher",
+        "A talented DJ is often 40-60% cheaper than a live band"
+      ]
+    },
+    "scenarios": {
+      "intimate": "Intimate",
+      "intimateDesc": "Close family & friends only",
+      "standard": "Standard",
+      "standardDesc": "Your current plan",
+      "grand": "Grand",
+      "grandDesc": "Extended family & community"
+    }
+  },
+  "vendors": {
+    "badge": "Wedding Marketplace",
+    "title": "Compare vendors at every price tier",
+    "subtitle": "Every category has budget, standard, and premium options. Find the perfect match for your wedding.",
+    "searchPlaceholder": "Search vendors...",
+    "allCategories": "All Categories",
+    "save": "Save",
+    "compare": "Compare",
+    "noVendors": "No vendors found",
+    "noVendorsDesc": "Try adjusting your filters or search query.",
+    "more": "more"
+  },
+  "dashboard": {
+    "title": "Wedding Organizer Dashboard",
+    "subtitle": "Manage your clients, vendors, and wedding timelines in one place.",
+    "activeWeddings": "Active Weddings",
+    "totalBudget": "Total Managed Budget",
+    "revenueCollected": "Revenue Collected",
+    "pendingTasks": "Pending Tasks",
+    "yourClients": "Your Clients",
+    "quickActions": "Quick Actions",
+    "pendingTasksTitle": "Pending Tasks",
+    "topVendors": "Top Vendors",
+    "upcomingEvents": "Upcoming Events",
+    "searchClients": "Search clients...",
+    "newBudgetPlan": "New Budget Plan",
+    "browseVendors": "Browse Vendors",
+    "comparePrices": "Compare Prices",
+    "settings": "Settings"
+  },
+  "login": {
+    "welcomeBack": "Welcome back",
+    "createAccount": "Join To'y Platform",
+    "loginSubtitle": "Sign in to continue planning your perfect wedding",
+    "registerSubtitle": "Start planning the wedding you want",
+    "fullName": "Full Name",
+    "emailPlaceholder": "your@email.com",
+    "phonePlaceholder": "+998 XX XXX XX XX",
+    "forgotPassword": "Forgot password?",
+    "signIn": "Sign In",
+    "signUp": "Create Account",
+    "orContinueWith": "or continue with",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?",
+    "google": "Google",
+    "telegram": "Telegram"
+  },
+  "guestList": {
+    "title": "Guest List Manager",
+    "badge": "Guest Management",
+    "subtitle": "Track RSVPs, dietary requirements, and seating arrangements.",
+    "addGuest": "Add Guest",
+    "totalGuests": "Total Guests",
+    "confirmed": "Confirmed",
+    "pending": "Pending",
+    "declined": "Declined",
+    "name": "Name",
+    "group": "Group",
+    "status": "Status",
+    "dietary": "Dietary",
+    "table": "Table",
+    "notes": "Notes",
+    "actions": "Actions",
+    "confirmedStatus": "Confirmed",
+    "pendingStatus": "Pending",
+    "declinedStatus": "Declined",
+    "maybeStatus": "Maybe",
+    "groups": {
+      "bride": "Bride's Side",
+      "groom": "Groom's Side",
+      "mutual": "Mutual Friends",
+      "colleagues": "Colleagues",
+      "vip": "VIP"
+    },
+    "dietaryOptions": {
+      "none": "No restrictions",
+      "vegetarian": "Vegetarian",
+      "vegan": "Vegan",
+      "halal": "Halal",
+      "glutenFree": "Gluten-free",
+      "allergies": "Allergies"
+    }
+  },
+  "countdown": {
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Minutes",
+    "seconds": "Seconds",
+    "untilWedding": "until your wedding day!"
+  },
+  "costTracker": {
+    "title": "Cost Tracker",
+    "badge": "Budget vs Actual",
+    "subtitle": "Track your actual spending against your planned budget.",
+    "budgeted": "Budgeted",
+    "spent": "Spent",
+    "remaining": "Remaining",
+    "overBudget": "Over Budget",
+    "onTrack": "On Track",
+    "addExpense": "Add Expense",
+    "expenseDescription": "Description",
+    "expenseAmount": "Amount",
+    "expenseCategory": "Category",
+    "expenseDate": "Date",
+    "recentExpenses": "Recent Expenses"
+  }
+}

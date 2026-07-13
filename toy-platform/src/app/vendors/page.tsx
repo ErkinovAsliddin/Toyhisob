@@ -24,6 +24,7 @@ import {
   SlidersHorizontal,
   Grid3X3,
   List,
+  type LucideIcon,
 } from "lucide-react";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
@@ -122,7 +123,7 @@ const MOCK_VENDORS = [
   },
 ];
 
-const ICON_MAP: Record<string, React.ComponentType<{ className?: string }>> = {
+const ICON_MAP: Record<string, LucideIcon> = {
   UtensilsCrossed, Building2, Camera, Music, Flower2,
 };
 

@@ -2,8 +2,11 @@
 
 import Link from "next/link";
 import { Heart, Instagram, Send, Phone } from "lucide-react";
+import { useI18n } from "@/i18n/context";
 
 export function Footer() {
+  const { t } = useI18n();
+
   return (
     <footer className="relative mt-24 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-t from-slate-900 to-slate-800" />
@@ -23,19 +26,18 @@ export function Footer() {
               <span className="text-xl font-bold text-white">To&apos;y Platform</span>
             </Link>
             <p className="text-slate-400 text-sm leading-relaxed">
-              Plan the wedding you want, not the one you&apos;re pressured into.
-              See real costs, real comparisons, control the number.
+              {t("footer.description")}
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-sm font-semibold text-white mb-4 uppercase tracking-wider">Plan</h3>
+            <h3 className="text-sm font-semibold text-white mb-4 uppercase tracking-wider">{t("footer.plan")}</h3>
             <ul className="space-y-3">
               {[
-                { label: "Budget Planner", href: "/budget" },
-                { label: "Cost Comparison", href: "/vendors" },
-                { label: "Wedding Checklist", href: "/checklist" },
+                { label: t("footer.budgetPlanner"), href: "/budget" },
+                { label: t("footer.costComparison"), href: "/vendors" },
+                { label: t("footer.weddingChecklist"), href: "/checklist" },
               ].map((link) => (
                 <li key={link.href}>
                   <Link href={link.href} className="text-slate-400 hover:text-white text-sm transition-colors">
@@ -48,13 +50,13 @@ export function Footer() {
 
           {/* Vendors */}
           <div>
-            <h3 className="text-sm font-semibold text-white mb-4 uppercase tracking-wider">Vendors</h3>
+            <h3 className="text-sm font-semibold text-white mb-4 uppercase tracking-wider">{t("footer.vendors")}</h3>
             <ul className="space-y-3">
               {[
-                { label: "Catering & Osh", href: "/vendors/catering" },
-                { label: "Venues & Halls", href: "/vendors/venue" },
-                { label: "Photo & Video", href: "/vendors/photography" },
-                { label: "Decorations", href: "/vendors/decoration" },
+                { label: t("categories.catering"), href: "/vendors/catering" },
+                { label: t("categories.venue"), href: "/vendors/venue" },
+                { label: t("categories.photography"), href: "/vendors/photography" },
+                { label: t("categories.decoration"), href: "/vendors/decoration" },
               ].map((link) => (
                 <li key={link.href}>
                   <Link href={link.href} className="text-slate-400 hover:text-white text-sm transition-colors">
@@ -67,7 +69,7 @@ export function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="text-sm font-semibold text-white mb-4 uppercase tracking-wider">Connect</h3>
+            <h3 className="text-sm font-semibold text-white mb-4 uppercase tracking-wider">{t("footer.connect")}</h3>
             <div className="flex gap-3">
               <a href="#" className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/10 text-slate-400 hover:bg-primary-500 hover:text-white transition-all">
                 <Instagram className="h-5 w-5" />
@@ -84,10 +86,10 @@ export function Footer() {
 
         <div className="mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-slate-500 text-sm">
-            2026 To&apos;y Platform. Made with love for Uzbekistan.
+            {t("footer.copyright")}
           </p>
           <div className="flex items-center gap-1 text-slate-500 text-sm">
-            Built for couples who want <Heart className="h-3 w-3 text-rose-400 mx-1" fill="currentColor" /> not debt
+            {t("footer.madeWith")} <Heart className="h-3 w-3 text-rose-400 mx-1" fill="currentColor" /> {t("footer.notDebt")}
           </div>
         </div>
       </div>

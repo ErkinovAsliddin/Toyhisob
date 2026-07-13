@@ -1,0 +1,343 @@
+{
+  "common": {
+    "appName": "To'y Platform",
+    "tagline": "O'zingiz xohlagan to'yni rejalashtiring, bosim ostidagi emas",
+    "loading": "Yuklanmoqda...",
+    "save": "Saqlash",
+    "cancel": "Bekor qilish",
+    "delete": "O'chirish",
+    "edit": "Tahrirlash",
+    "back": "Orqaga",
+    "next": "Keyingi",
+    "continue": "Davom etish",
+    "finish": "Tugatish",
+    "search": "Qidirish",
+    "filter": "Filtrlash",
+    "all": "Hammasi",
+    "none": "Yo'q",
+    "yes": "Ha",
+    "no": "Yo'q",
+    "or": "yoki",
+    "and": "va",
+    "close": "Yopish",
+    "share": "Ulashish",
+    "export": "Eksport",
+    "import": "Import",
+    "download": "Yuklab olish",
+    "upload": "Yuklash",
+    "viewAll": "Hammasini ko'rish",
+    "viewMore": "Ko'proq ko'rish",
+    "learnMore": "Batafsil",
+    "getStarted": "Boshlash",
+    "signIn": "Kirish",
+    "signUp": "Ro'yxatdan o'tish",
+    "signOut": "Chiqish",
+    "email": "Elektron pochta",
+    "password": "Parol",
+    "phone": "Telefon",
+    "name": "Ism",
+    "guests": "mehmonlar",
+    "perGuest": "mehmoniga",
+    "fixed": "belgilangan narx",
+    "verified": "Tasdiqlangan",
+    "featured": "Tavsiya etilgan",
+    "reviews": "sharhlar",
+    "rating": "Reyting",
+    "popular": "Mashhur",
+    "budget": "Byudjet",
+    "standard": "Oddiy",
+    "premium": "Premium",
+    "saveAmount": "{amount} tejamkorlik",
+    "vsStandard": "Oddiyga nisbatan",
+    "startOver": "Qaytadan boshlash",
+    "noResults": "Natija topilmadi",
+    "clearFilters": "Filtrlarni tozalash"
+  },
+  "nav": {
+    "budgetPlanner": "Byudjet rejalashtiruvchi",
+    "marketplace": "Bozor",
+    "dashboard": "Boshqaruv paneli",
+    "planWedding": "To'yingizni rejalashtiring",
+    "browseVendors": "Yetkazib beruvchilarni ko'rish",
+    "notifications": "Bildirishnomalar"
+  },
+  "hero": {
+    "badge": "O'zbekistonning birinchi aqlli to'y rejalashtiruvchisi",
+    "title1": "O'zingiz xohlagan",
+    "titleHighlight": "to'yni rejalashtiring",
+    "title2": "bosim ostidagi emas,",
+    "titleStrikethrough": "majburiy",
+    "subtitle": "Haqiqiy narxlarni ko'ring, turli narx kategoriyalaridagi yetkazib beruvchilarni solishtiring va butun oilangiz kelishadigan byudjetni oling — Toshkent to'y bozorining haqiqiy ma'lumotlari asosida.",
+    "cta": "Rejalashtirishni boshlash — Bepul",
+    "socialProof": "2 400+ juftlik",
+    "ratingText": "4.9/5"
+  },
+  "problems": {
+    "title": "O'zbekistondagi to'ylarning haqiqiy muammosi",
+    "subtitle": "Bu yetkazib beruvchilarni topish haqida emas. Bu moliyaviy va ijtimoiy bosim haqida — natijada to'ylar yillik daromaddan qimmatga tushadi.",
+    "stat1Number": "65%",
+    "stat1Label": "to'ylar yillik daromaddan qimmatga tushadi",
+    "stat2Number": "44%",
+    "stat2Label": "juftliklar sarflangan summadan afsuslanadi",
+    "stat3Number": "0",
+    "stat3Label": "O'zbekistonda haqiqiy narx solishtirish platformasi"
+  },
+  "features": {
+    "title": "Aqlli rejalashtirish uchun kerakli hamma narsa",
+    "badge": "Qanday ishlaydi",
+    "budgetPlanner": {
+      "title": "AI byudjet rejalashtiruvchi",
+      "description": "Byudjet, mehmonlar soni va ustuvorliklarni kiriting. Haqiyqiy mahalliy narxlar asosida realistik taqsimot oling — umumiy maslahatlar emas."
+    },
+    "comparison": {
+      "title": "Ko'p bosqichli solishtirish",
+      "description": "Ketering, maydonlarni va xizmatlarni byudjet/oddiy/premium bosqichlarida yonma-yon solishtiring. Pul qayerga ketayotganini aniq ko'ring."
+    },
+    "pressureProof": {
+      "title": "Bosimdan mustahkam ma'lumot",
+      "description": "Oilangiz bilan professional xarajat taqsimotini ulashing. 'Xarajatlarni kamaytiryapmiz' ni 'hisob-kitob qildik' ga aylantiring. Raqamlar quloq soladi."
+    },
+    "forEveryone": {
+      "title": "Hamma uchun",
+      "description": "Juftliklar, to'lov qiluvchi oilalar, tashkilotchilar va yetkazib beruvchilar uchun yaratilgan. Har biri o'ziga kerakli narsani bir joyda ko'radi."
+    }
+  },
+  "categories": {
+    "title": "Yetkazib beruvchilarni narx bosqichlarida solishtiring",
+    "badge": "Bozor",
+    "subtitle": "Har bir kategoriyada byudjet, oddiy va premium variantlar mavjud. To'yingizga mosini toping.",
+    "catering": "Ketering va Osh",
+    "venue": "Maydonlar va Zallar",
+    "photography": "Foto va Video",
+    "music": "Musiqa va DJ",
+    "decoration": "Dekor va Gullar",
+    "clothing": "Kiyim va Aksessuarlar",
+    "transport": "Transport va Avtomobillar",
+    "invitations": "Taklifnomalar va Qog'ozlar",
+    "gifts": "Sovg'alar va Sarpo"
+  },
+  "steps": {
+    "badge": "3 oson qadam",
+    "title": "'Qayerdan boshlashni bilmayman'dan 'Men uddalayman'gacha",
+    "step1": {
+      "number": "01",
+      "title": "Byudjetni ayting",
+      "description": "Umumiy byudjet, mehmonlar soni va shaharni kiriting. Yoki 'Bilmayman' deb ayting — biz yordam beramiz."
+    },
+    "step2": {
+      "number": "02",
+      "title": "Taqsimotni ko'ring",
+      "description": "Toshkent bozorining haqiqiy ma'lumotlari asosida barcha to'y kategoriyalari bo'yicha realistik xarajat taqsimotini oling."
+    },
+    "step3": {
+      "number": "03",
+      "title": "Solishtiring va qaror qiling",
+      "description": "Turli narx bosqichlaridagi yetkazib beruvchilarni solishtiring. AI dan so'rang: '100 mehmon uchun 5 milliongacha eng yaxshi ketering qaysi?'"
+    }
+  },
+  "testimonials": {
+    "badge": "Haqiqiy hikoyalar",
+    "title": "Aqlli rejalashtirgan juftliklar",
+    "items": [
+      {
+        "name": "Dilnoza va Sardor",
+        "text": "200 kishilik to'ydan 80 kishilikka o'tib, 12 million so'm tejamkorlik qildik. Byudjet rejalashtiruvchi pul qayerga ketayotganini ko'rsatdi."
+      },
+      {
+        "name": "Farida va Ozodbek",
+        "text": "Oilalarimizga narx solishtirishni ko'rsatganimizda, 'hammani taklif qilish kerak' suhbati tugadi. Raqamlar bilan bahslashish qiyin."
+      },
+      {
+        "name": "Malika, tashkilotchi",
+        "text": "Tashkilotchi sifatida 5 ta mijozning byudjetini boshqaruv panelida boshqarish — haftasiga soatlab vaqt tejaydi. O'zgarish."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Aqlli rejalashtirishga tayyormisiz?",
+    "subtitle": "Ma'lumotni bosimga afzal ko'rgan minglab juftliklarga qo'shiling. Mukammal to'y realistik byudjetdan boshlanadi.",
+    "button": "Bepul byudjet rejasini boshlash"
+  },
+  "footer": {
+    "description": "O'zingiz xohlagan to'yni rejalashtiring, bosim ostidagi emas. Haqiqiy narxlarni bilib, raqamlarni nazorat qiling.",
+    "plan": "Rejalashtirish",
+    "vendors": "Yetkazib beruvchilar",
+    "connect": "Aloqa",
+    "budgetPlanner": "Byudjet rejalashtiruvchi",
+    "costComparison": "Narx solishtirish",
+    "weddingChecklist": "To'y ro'yxati",
+    "madeWith": "Istagan juftliklar uchun yaratilgan",
+    "notDebt": "qarz emas",
+    "copyright": "2026 To'y Platform. O'zbekiston uchun sevgi bilan yaratilgan."
+  },
+  "budget": {
+    "badge": "AI byudjet rejalashtiruvchi",
+    "title": "To'y byudjetini yarating",
+    "subtitle": "Bir nechta kiritish — va biz pulingiz qayerga ketishi kerakligini ko'rsatamiz, Toshkentning haqiqiy ma'lumotlari asosida.",
+    "steps": {
+      "location": "Joy va Sana",
+      "guests": "Mehmonlar soni",
+      "budget": "Byudjet",
+      "priorities": "Ustuvorliklar",
+      "plan": "Reja"
+    },
+    "location": {
+      "title": "Qayerda va qachon?",
+      "city": "Shahar",
+      "date": "To'y sanasi",
+      "yourName": "Ismingiz"
+    },
+    "guests": {
+      "title": "Necha mehmon?",
+      "intimate": "kichik",
+      "standard": "oddiy",
+      "grand": "katta",
+      "info": "Sovetga ko'ra, O'zbekiston to'ylarining 65%ida 100-200 mehmon bo'ladi. Kichikroq to'ylar faqat keteringda o'rtacha 40-60% tejamkorlik qiladi."
+    },
+    "budget": {
+      "title": "Umumiy byudjetingiz qancha?",
+      "budgetRange": "byudjet",
+      "midRange": "o'rta",
+      "premiumRange": "premium",
+      "perGuestEstimate": "Mehmon boshiga hisob",
+      "greatBudget": "Ajoyib byudjet intizomi!",
+      "moderateRange": "O'rta diapazon — optimizatsiya qilish mumkin",
+      "premiumRangeText": "Premium diapazon — ustuvorliklaringizga mosligini tekshiring"
+    },
+    "priorities": {
+      "title": "Siz uchun nima muhimroq?",
+      "description": "Byudjetni kategoriyalar bo'yicha taqsimlash uchun slayderni siljiting. Foizlar 100% bo'lishi kerak.",
+      "totalAllocated": "Jami taqsimlangan"
+    },
+    "plan": {
+      "title": "To'y byudjet rejangiz",
+      "costBreakdown": "Kategoriyalar bo'yicha xarajat taqsimoti",
+      "scenarioComparison": "Stsenariy solishtirish",
+      "yourPlan": "Sizning rejangiz",
+      "showScenarios": "Stsenariyalarni ko'rsatish",
+      "hideScenarios": "Stsenariyalarni yashirish",
+      "moneySavingTips": "Tejamkorlik maslahatlari",
+      "browseVendors": "Yetkazib beruvchilarni ko'rish",
+      "tips": [
+        "Maydonlarni mavsumdan tashqari (noyabr-fevral) bron qiling — 20-30% tejamkorlik",
+        "To'liq menyuni emas, osh/plovni ko'ring",
+        "Mavsumiy gullardan foydalaning — 50% arzon va yangiroq",
+        "Yaxshi DJ ko'pincha jonli guruhdan 40-60% arzon"
+      ]
+    },
+    "scenarios": {
+      "intimate": "Kichik",
+      "intimateDesc": "Faqat yaqin oila va do'stlar",
+      "standard": "Oddiy",
+      "standardDesc": "Sizning hozirgi rejangiz",
+      "grand": "Katta",
+      "grandDesc": "Kengaytirilgan oila va jamiyat"
+    }
+  },
+  "vendors": {
+    "badge": "To'y bozori",
+    "title": "Yetkazib beruvchilarni narx bosqichlarida solishtiring",
+    "subtitle": "Har bir kategoriyada byudjet, oddiy va premium variantlar mavjud.",
+    "searchPlaceholder": "Yetkazib beruvchilarni qidirish...",
+    "allCategories": "Barcha kategoriyalar",
+    "save": "Saqlash",
+    "compare": "Solishtirish",
+    "noVendors": "Yetkazib beruvchilar topilmadi",
+    "noVendorsDesc": "Filtrlaringizni yoki qidiruv so'rovini o'zgartirib ko'ring.",
+    "more": "ko'proq"
+  },
+  "dashboard": {
+    "title": "To'y tashkilotchisi paneli",
+    "subtitle": "Mijozlarni, yetkazib beruvchilarni va jadvallarni bir joyda boshqaring.",
+    "activeWeddings": "Faol to'ylar",
+    "totalBudget": "Umumiy boshqariladigan byudjet",
+    "revenueCollected": "Yig'ilgan daromad",
+    "pendingTasks": "Kutilayotgan vazifalar",
+    "yourClients": "Sizning mijozlaringiz",
+    "quickActions": "Tez harakatlar",
+    "pendingTasksTitle": "Kutilayotgan vazifalar",
+    "topVendors": "Eng yaxshi yetkazib beruvchilar",
+    "upcomingEvents": "Kelayotgan tadbirlar",
+    "searchClients": "Mijozlarni qidirish...",
+    "newBudgetPlan": "Yangi byudjet rejasi",
+    "browseVendors": "Yetkazib beruvchilarni ko'rish",
+    "comparePrices": "Narxlarni solishtirish",
+    "settings": "Sozlamalar"
+  },
+  "login": {
+    "welcomeBack": "Xush kelibsiz",
+    "createAccount": "To'y Platformga qo'shiling",
+    "loginSubtitle": "Mukammal to'yni rejalashtirishni davom ettirish uchun kiring",
+    "registerSubtitle": "O'zingiz xohlagan to'yni rejalashtirishni boshlang",
+    "fullName": "To'liq ism",
+    "emailPlaceholder": "siz@email.com",
+    "phonePlaceholder": "+998 XX XXX XX XX",
+    "forgotPassword": "Parolni unutdingiz?",
+    "signIn": "Kirish",
+    "signUp": "Hisob yaratish",
+    "orContinueWith": "yoki davom eting",
+    "noAccount": "Hisobingiz yo'qmi?",
+    "hasAccount": "Hisobingiz bormi?",
+    "google": "Google",
+    "telegram": "Telegram"
+  },
+  "guestList": {
+    "title": "Mehmonlar ro'yxati boshqaruvi",
+    "badge": "Mehmonlar boshqaruvi",
+    "subtitle": "Tasdiqlarni, ovqat talablarini va o'tirish tartibini kuzating.",
+    "addGuest": "Mehmon qo'shish",
+    "totalGuests": "Jami mehmonlar",
+    "confirmed": "Tasdiqlangan",
+    "pending": "Kutilmoqda",
+    "declined": "Rad etilgan",
+    "name": "Ism",
+    "group": "Guruh",
+    "status": "Holat",
+    "dietary": "Ovqat",
+    "table": "Stol",
+    "notes": "Eslatmalar",
+    "actions": "Harakatlar",
+    "confirmedStatus": "Tasdiqlangan",
+    "pendingStatus": "Kutilmoqda",
+    "declinedStatus": "Rad etilgan",
+    "maybeStatus": "Ehtimol",
+    "groups": {
+      "bride": "Kelin tomoni",
+      "groom": "Kuyov tomoni",
+      "mutual": "Umumiy do'stlar",
+      "colleagues": "Hamkasblar",
+      "vip": "VIP"
+    },
+    "dietaryOptions": {
+      "none": "Cheklovlar yo'q",
+      "vegetarian": "Vegetarian",
+      "vegan": "Vegan",
+      "halal": "Halol",
+      "glutenFree": "Glutensiz",
+      "allergies": "Allergiyalar"
+    }
+  },
+  "countdown": {
+    "days": "Kun",
+    "hours": "Soat",
+    "minutes": "Daqiqa",
+    "seconds": "Soniya",
+    "untilWedding": "to'y kungacha qoldi!"
+  },
+  "costTracker": {
+    "title": "Xarajatlar kuzatuvchisi",
+    "badge": "Byudjet vs Haqiqat",
+    "subtitle": "Haqiqiy xarajatlarni rejalashtirilgan byudjet bilan solishtiring.",
+    "budgeted": "Rejalashtirilgan",
+    "spent": "Sarflangan",
+    "remaining": "Qoldiq",
+    "overBudget": "Byudjetdan oshib ketdi",
+    "onTrack": "Byudjet doirasida",
+    "addExpense": "Xarajat qo'shish",
+    "expenseDescription": "Tavsif",
+    "expenseAmount": "Summa",
+    "expenseCategory": "Kategoriya",
+    "expenseDate": "Sana",
+    "recentExpenses": "Oxirgi xarajatlar"
+  }
+}

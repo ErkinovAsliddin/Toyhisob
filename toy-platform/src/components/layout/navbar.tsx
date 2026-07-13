@@ -13,20 +13,22 @@ import {
   LayoutDashboard,
   LogIn,
   Sparkles,
-  ChevronDown,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
-
-const navItems = [
-  { label: "Budget Planner", href: "/budget", icon: Calculator },
-  { label: "Marketplace", href: "/vendors", icon: Store },
-  { label: "Dashboard", href: "/dashboard", icon: LayoutDashboard },
-];
+import { useI18n } from "@/i18n/context";
+import { LanguageSwitcher } from "./language-switcher";
 
 export function Navbar() {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
+  const { t } = useI18n();
+
+  const navItems = [
+    { label: t("nav.budgetPlanner"), href: "/budget", icon: Calculator },
+    { label: t("nav.marketplace"), href: "/vendors", icon: Store },
+    { label: t("nav.dashboard"), href: "/dashboard", icon: LayoutDashboard },
+  ];
 
   return (
     <>
@@ -90,31 +92,35 @@ export function Navbar() {
 
               {/* Desktop Actions */}
               <div className="hidden md:flex items-center gap-3">
+                <LanguageSwitcher />
                 <Link href="/login">
                   <Button variant="ghost" size="sm">
                     <LogIn className="h-4 w-4" />
-                    Sign In
+                    {t("common.signIn")}
                   </Button>
                 </Link>
                 <Link href="/budget">
                   <Button size="sm">
                     <Sparkles className="h-4 w-4" />
-                    Plan Your Wedding
+                    {t("nav.planWedding")}
                   </Button>
                 </Link>
               </div>
 
               {/* Mobile Toggle */}
-              <button
-                className="md:hidden p-2 rounded-xl hover:bg-slate-100 transition-colors"
-                onClick={() => setMobileOpen(!mobileOpen)}
-              >
-                {mobileOpen ? (
-                  <X className="h-5 w-5 text-slate-600" />
-                ) : (
-                  <Menu className="h-5 w-5 text-slate-600" />
-                )}
-              </button>
+              <div className="flex items-center gap-2 md:hidden">
+                <LanguageSwitcher />
+                <button
+                  className="p-2 rounded-xl hover:bg-slate-100 transition-colors"
+                  onClick={() => setMobileOpen(!mobileOpen)}
+                >
+                  {mobileOpen ? (
+                    <X className="h-5 w-5 text-slate-600" />
+                  ) : (
+                    <Menu className="h-5 w-5 text-slate-600" />
+                  )}
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -161,7 +167,7 @@ export function Navbar() {
               >
                 <Button className="w-full" size="lg">
                   <Sparkles className="h-4 w-4" />
-                  Plan Your Wedding
+                  {t("nav.planWedding")}
                 </Button>
               </Link>
             </div>

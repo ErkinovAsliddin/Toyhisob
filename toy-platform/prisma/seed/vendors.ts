@@ -315,7 +315,7 @@ const VENDORS_DATA = [
             description: "Luxury car fleet for the wedding party",
             price: 5000000,
             priceUnit: "fixed",
-            features: ["1 luxury lead car (Mercedes/BMW)", "3 decorated跟随 cars", "Full flower decoration", "Professional drivers (4)", "6 hours rental", "Red carpet service"],
+            features: ["1 luxury lead car (Mercedes/BMW)", "3 decorated escort cars", "Full flower decoration", "Professional drivers (4)", "6 hours rental", "Red carpet service"],
             images: [],
             popular: true,
           },

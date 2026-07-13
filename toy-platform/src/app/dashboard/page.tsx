@@ -22,7 +22,11 @@ import {
   Store,
   Star,
   Sparkles,
+  UserPlus,
+  Timer,
+  Receipt,
 } from "lucide-react";
+import { useI18n } from "@/i18n/context";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { Button } from "@/components/ui/button";
@@ -74,6 +78,7 @@ const upcomingTasks = [
 
 export default function DashboardPage() {
   const [selectedTab, setSelectedTab] = useState<"overview" | "clients" | "vendors">("overview");
+  const { t } = useI18n();
 
   const totalBudget = MOCK_CLIENTS.reduce((acc, c) => acc + c.budget, 0);
   const totalSpent = MOCK_CLIENTS.reduce((acc, c) => acc + c.spent, 0);
@@ -90,23 +95,23 @@ export default function DashboardPage() {
             <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mb-8">
               <div>
                 <h1 className="text-2xl sm:text-3xl font-bold text-slate-900">
-                  Wedding Organizer Dashboard
+                  {t("dashboard.title")}
                 </h1>
                 <p className="text-slate-500 mt-1">
-                  Manage your clients, vendors, and wedding timelines in one place.
+                  {t("dashboard.subtitle")}
                 </p>
               </div>
               <div className="flex gap-3">
                 <Button variant="secondary" size="sm">
                   <Bell className="h-4 w-4" />
-                  Notifications
+                  {t("nav.notifications")}
                   <span className="ml-1 h-5 w-5 rounded-full bg-rose-500 text-white text-[10px] flex items-center justify-center">
                     3
                   </span>
                 </Button>
                 <Button size="sm">
                   <Plus className="h-4 w-4" />
-                  Add Client
+                  {t("guestList.addGuest")}
                 </Button>
               </div>
             </div>
@@ -116,10 +121,10 @@ export default function DashboardPage() {
           <FadeIn delay={0.1}>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
               {[
-                { label: "Active Weddings", value: activeCount, icon: Users, color: "text-primary-500", bg: "bg-primary-50" },
-                { label: "Total Managed Budget", value: formatPrice(totalBudget), icon: Wallet, color: "text-emerald-500", bg: "bg-emerald-50" },
-                { label: "Revenue Collected", value: formatPrice(totalSpent), icon: TrendingUp, color: "text-accent-500", bg: "bg-amber-50" },
-                { label: "Pending Tasks", value: upcomingTasks.filter((t) => t.urgent).length, icon: Clock, color: "text-rose-500", bg: "bg-rose-50" },
+                { label: t("dashboard.activeWeddings"), value: activeCount, icon: Users, color: "text-primary-500", bg: "bg-primary-50" },
+                { label: t("dashboard.totalBudget"), value: formatPrice(totalBudget), icon: Wallet, color: "text-emerald-500", bg: "bg-emerald-50" },
+                { label: t("dashboard.revenueCollected"), value: formatPrice(totalSpent), icon: TrendingUp, color: "text-accent-500", bg: "bg-amber-50" },
+                { label: t("dashboard.pendingTasks"), value: upcomingTasks.filter((t) => t.urgent).length, icon: Clock, color: "text-rose-500", bg: "bg-rose-50" },
               ].map((stat, i) => {
                 const Icon = stat.icon;
                 return (
@@ -148,13 +153,13 @@ export default function DashboardPage() {
                   <CardHeader className="flex flex-row items-center justify-between">
                     <CardTitle className="flex items-center gap-2">
                       <Users className="h-5 w-5 text-primary-500" />
-                      Your Clients
+                      {t("dashboard.yourClients")}
                     </CardTitle>
                     <div className="relative">
                       <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-3.5 w-3.5 text-slate-400" />
                       <input
                         type="text"
-                        placeholder="Search clients..."
+                        placeholder={t("dashboard.searchClients")}
                         className="h-8 pl-8 pr-3 rounded-lg border border-slate-200 text-xs focus:outline-none focus:ring-2 focus:ring-primary-500/20"
                       />
                     </div>
@@ -215,14 +220,16 @@ export default function DashboardPage() {
                 <Card className="p-6">
                   <CardTitle className="flex items-center gap-2 mb-4">
                     <Sparkles className="h-5 w-5 text-accent-500" />
-                    Quick Actions
+                    {t("dashboard.quickActions")}
                   </CardTitle>
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
                     {[
-                      { label: "New Budget Plan", icon: Calculator, href: "/budget", color: "bg-primary-50 text-primary-600" },
-                      { label: "Browse Vendors", icon: Store, href: "/vendors", color: "bg-emerald-50 text-emerald-600" },
-                      { label: "Compare Prices", icon: BarChart3, href: "/vendors", color: "bg-accent-50 text-accent-600" },
-                      { label: "Settings", icon: Settings, href: "/dashboard", color: "bg-slate-100 text-slate-600" },
+                      { label: t("dashboard.newBudgetPlan"), icon: Calculator, href: "/budget", color: "bg-primary-50 text-primary-600" },
+                      { label: t("dashboard.browseVendors"), icon: Store, href: "/vendors", color: "bg-emerald-50 text-emerald-600" },
+                      { label: t("dashboard.comparePrices"), icon: BarChart3, href: "/vendors", color: "bg-accent-50 text-accent-600" },
+                      { label: t("guestList.title"), icon: UserPlus, href: "/guests", color: "bg-violet-50 text-violet-600" },
+                      { label: t("costTracker.title"), icon: Receipt, href: "/cost-tracker", color: "bg-rose-50 text-rose-600" },
+                      { label: t("dashboard.settings"), icon: Settings, href: "/dashboard", color: "bg-slate-100 text-slate-600" },
                     ].map((action) => {
                       const Icon = action.icon;
                       return (
@@ -250,7 +257,7 @@ export default function DashboardPage() {
                   <CardHeader>
                     <CardTitle className="flex items-center gap-2 text-base">
                       <Clock className="h-4 w-4 text-amber-500" />
-                      Pending Tasks
+                      {t("dashboard.pendingTasksTitle")}
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
@@ -290,7 +297,7 @@ export default function DashboardPage() {
                   <CardHeader>
                     <CardTitle className="flex items-center gap-2 text-base">
                       <Star className="h-4 w-4 text-accent-500" />
-                      Top Vendors
+                      {t("dashboard.topVendors")}
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
@@ -327,7 +334,7 @@ export default function DashboardPage() {
                 <Card className="p-5">
                   <h3 className="font-semibold text-sm text-slate-900 mb-3 flex items-center gap-2">
                     <Calendar className="h-4 w-4 text-primary-500" />
-                    Upcoming Events
+                    {t("dashboard.upcomingEvents")}
                   </h3>
                   <div className="space-y-2">
                     {[
