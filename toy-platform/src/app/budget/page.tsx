@@ -30,7 +30,10 @@ import {
   Car,
   Mail,
   Gift,
+<<<<<<< HEAD
   BarChart3,
+=======
+>>>>>>> 22dc4b2c3313da121be1a84fb21652bfb248244a
   type LucideIcon,
 } from "lucide-react";
 import { Navbar } from "@/components/layout/navbar";

@@ -404,7 +404,7 @@ async function main() {
             description: tierData.description,
             price: tierData.price,
             priceUnit: tierData.priceUnit,
-            capacity: tierData.capacity || null,
+            capacity:  "capacity" in tierData ? tierData.capacity ?? null : null,
             features: tierData.features,
             images: tierData.images,
             popular: tierData.popular,
